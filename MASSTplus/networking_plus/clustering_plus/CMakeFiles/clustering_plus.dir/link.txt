@@ -1,0 +1,1 @@
+/usr/bin/c++ -static-libstdc++ -rdynamic CMakeFiles/clustering_plus.dir/clustering_plus.cpp.o -o clustering_plus  -lstdc++fs 

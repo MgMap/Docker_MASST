@@ -1,0 +1,1 @@
+/usr/bin/c++ -static-libstdc++ -rdynamic CMakeFiles/pairing_plus.dir/pairing_plus.cpp.o -o pairing_plus  -lstdc++fs 

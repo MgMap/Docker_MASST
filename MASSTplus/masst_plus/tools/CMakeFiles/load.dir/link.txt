@@ -1,0 +1,1 @@
+/usr/bin/c++ -static-libstdc++ -rdynamic CMakeFiles/load.dir/load_library.cpp.o CMakeFiles/load.dir/__/spectral_index.cpp.o -o load  -lstdc++fs ../mgf/libMGF.a -lstdc++fs 
