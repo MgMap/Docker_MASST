@@ -4,3 +4,15 @@ docker run --rm -it -v <absoulte path to the file>:/MASSTplus masstplus  </br>
 for example docker run --rm -it -v C:\Users\minau\Downloads\MASSTplusJose\MASSTplus:/MASSTplus masstplus  </br>
 
 This will mount the docker container to the your working directory
+
+run cmake .</br>
+    make </br>
+    This will compile all the files necessary except from search and load. </br>
+    go inside masst_plus folder and run cmake . </br>
+    make
+   </br>
+
+   ./load <file_name> to load .mgf files. </br>
+   This will create a library in the folder. </br>
+   ./search <query_filename> to search.
+  
