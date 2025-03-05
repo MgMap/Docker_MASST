@@ -1,7 +1,9 @@
 After cloning the repo run these commands </br>
 docker build -t masstplus  </br>
-docker run --rm -it -v <"absoulte path to the folder called MASSTplus you just cloned">:/MASSTplus masstplus  </br>
-for example docker run --rm -it masstplus  </br>
+docker run --rm -it masstplus  </br>
+
+if you want dataset to be mounted run this </br>
+docker run --rm -it -v <"absoulte path to dataset">:/dataset masstplus  </br>
 
 This will mount the docker container to the your working directory
 
