@@ -17,7 +17,7 @@ RUN apt-get update && apt-get install -y \
     && rm -rf /var/lib/apt/lists/*
 
 # Copy the project files into the container
-
+COPY . .
 
 
 # Create a build directory and compile the project
