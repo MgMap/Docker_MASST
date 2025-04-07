@@ -2,8 +2,8 @@
 FROM ubuntu:22.04
 
 # Set working directory
-WORKDIR /MASSTplus
 
+WORKDIR /MASSTplus
 # Install required dependencies
 RUN apt-get update && apt-get install -y \
     cmake \
@@ -17,9 +17,11 @@ RUN apt-get update && apt-get install -y \
     && rm -rf /var/lib/apt/lists/*
 
 # Copy the project files into the container
-COPY . .
+COPY MASSTplus/ .
 
 
-# Create a build directory and compile the project
-ENTRYPOINT ["/bin/bash"]
+RUN mkdir build && cd build && cmake .. && make -j$(nproc)
+# Run the "search" executable.
+# Adjust the path (./build/masst_plus/tools/search) if your target is different.
+CMD ["./build/masst_plus/tools/search"]
 
